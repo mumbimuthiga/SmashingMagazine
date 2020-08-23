@@ -1,7 +1,9 @@
+
 #topbar{
 	width: 100%;
 	height: 85px;
 	background-color: #B22222;
+
 	
 }
  #topbar a{
@@ -20,6 +22,14 @@
 ul li{
 	display: inline;
 }
+.header-latest{
+	width: 30%;
+    margin-left: 40%;
+	background-color: white;
+	position: absolute;
+	text-align: center;
+	top: 120px;
+	}
 h1{
 	color: black;
 	font-size: 25px;
@@ -29,93 +39,32 @@ h2{
 }
 h5{
 	font-family: Elena;
+text-decoration-line: underline;
+font-size: 20px;
+}
+#search{
+	width: 20%;
 }
 
-.item1{grid-area: header;}
 .item2 { grid-area: menu; }
 .item3 { grid-area: left; }
 .item4 { grid-area: right; }
 .item5 { grid-area: midleft; }
 
-.con1{grid-area: cleft;}
-.con2{grid-area: cmiddle;}
-.con3{grid-area:cright;}
-.contain{
-	display: grid;
-	grid-template-areas: 
-	'cleft cleft cleft'
-	'cmiddle cmiddle cmiddle'
-	'cright cright cright';
-	grid-gap: 2px;
-}
-
-.members{grid-area:mleft;}
-.podcast{grid-area: mright;}
-
 
 
 .grid-container {
+
+	
   display: grid;
   grid-template-areas:
-    'header header header header header header'
+   
     'menu menu menu right right right'
     ' menu menu menu right right right'
     'midleft midleft midleft left left left';
-     grid-gap: 2px;
+     grid-gap: 0.2px;
     padding: 1px;
 
-}
-
-.chatspot{
-	display: grid;
-	grid-template-areas: 
-	'mleft mleft mleft'
-	'mright mright mright';
-	grid-gap: 2px;
-	padding: 1px;
-}
-.members{
-
-}
-
-
-.days6{grid-area:dayleft; }
-.days7{grid-area:daymiddle; }
-.days9{grid-area:dayright; }
-
-
-.main{
-	display: grid;
-	grid-template-areas: 
-	'dayleft dayleft dayleft'
-	'daymiddle daymiddle daymiddle'
-	'dayright dayright dayright';
-	grid-gap: 2px;
-	padding: 1px;
-	margin: 30px;
-}
-.main >div{
- padding: 20px 0;
-font-family:Calibri Bold,AvenirNext,Avenir,-apple-system,BlinkMacSystemFont,Roboto Slab,Droid Serif,Segoe UI,Oxygen-Sans,Ubuntu,Cantarell,Georgia,serif;
- font-size: 15px;
-  color: black;
-  margin: 50px;
-
-}
-.main {
-
-}
-.days7 a{
-	color: black;
-	font-size: 25px;
-}
-.days6 a{
-	color: black;
-	font-size: 25px;
-}
-.days9 a{
-	color: black;
-	font-size: 25px;
 }
 
 
@@ -127,26 +76,311 @@ font-family:Calibri Bold,AvenirNext,Avenir,-apple-system,BlinkMacSystemFont,Robo
 }
 .item3{
 	background-color:#B22222;
-	height: 100%;
-	
+	height: 100vh;
+	border-top: 0.1px solid #800000;
 }
 .item4{
 	background-color:#B22222;
-	height: 100%;
-	width: 100%;
+	height: 100vh;
+	
+	border-bottom: 0.1px solid #B22222;
 }
 .item2{
 	background-color:#800000;
-	height: 100%;
+	height: 100vh;
+	
+	}
+.grid-container h2{
+	margin-top: 100px;	
+	}
+.item4 h2{
+	margin-top: 100px;	
 	}
 .item5{
 	background-color:#800000;
-	height: 100%;
+	height: 100vh;
+
 	
 }
-.main{
-	display: inline-flex;
+a{
+	color: white;
 }
+button{
+	font-size: 20px;
+	color: blue;
+}
+
+.main{
+	margin-left: 50px;
+	display: inline-grid;
+     
+	grid-template-columns: 30% 30% 30%;
+	grid-column-gap: 3em;
+	grid-row-gap: 7em;
+	
+}
+.main2{
+	display: inline-grid;
+	grid-template-columns: 70% 30%;
+	grid-gap: 3em;
+	color: white;
+
+
+
+}
+.main2 button{
+	width: 50%;
+}
+.contain{
+	display: grid;
+	grid-template-columns: 30% 30% 30%;
+	grid-gap: 3em;
+}
+.contain a{
+	color: black;
+	text-decoration-line: underline;
+}
+.members1{
+	background-color:#B22222;
+	
+	height: 100vh;
+	margin-top: 168px;
+    margin-left: 20px;
+    text-align: center;
+
+
+}
+.members1 h5 {
+	margin-top: 230px;
+	font-size: 30px;
+}
+.members1 p{
+	font-size: 20px;
+}
+.members{
+	color: black;
+	margin-top: 168px;
+	margin-left: 20px;
+}
+.members a{
+	color: black;
+	font-size: 30px;
+}
+.days{
+	width: 55vh;
+	height: 50vh;
+}
+.days a{
+	color:black;
+	font-size: 23px;
+}
+.days p{
+	font-size: calc(.85em + .2vw);
+
+}
+.days h5{
+	font-family: Elena;
+}
+.days span a{
+	color: #666;
+    text-decoration: none;
+    padding: 10px 0;
+    background-image: linear-gradient(#666,#666);
+    background-repeat: no-repeat;
+    background-size: 100% 1px;
+    background-position: cenpadding: 10px 0;
+    background-image: linear-gradient(#666,#666);
+    background-repeat: no-repeat;
+    background-size: 100% 1px;
+    background-position: center bottom 29%;
+    background-origin: padding-box;
+    text-shadow: 1px 0 #f6f3f2, 2px 0 #f6f3f2, 1px 0 #f6f3f2, -1px 0 #f6f3f2, -2px 0 #f6f3f2, -3px 0 #f6f3f2;
+    transition: color .1s ease-out;ter bottom 29%;
+    background-origin: padding-box;
+    text-shadow: 1px 0 #f6f3f2, 2px 0 #f6f3f2, 1px 0 #f6f3f2, -1px 0 #f6f3f2, -2px 0 #f6f3f2, -3px 0 #f6f3f2;
+    transition: color .1s ease-out;
+    font-size: 18px;
+}
+.contain{
+	display: inline-flex;
+	grid-auto-columns: auto;
+}
+
+.smashingTv{
+	background-color: #B22222;	
+
+}
+.smashingTv button{
+	width: 30%;
+	
+}
+.smashingTv h6{
+text-decoration-line: underline;
+
+}
+.smashingTv p{
+	font-size: 18px;
+	
+}
+
+.latest{
+	width: 100vh;
+	height: 20vh;
+	margin-left: 480px;
+}
+.latest h6{
+	margin-top: 80px;
+	text-decoration-line: underline;
+	font-size: 20px;
+}
+.june2020{
+	background-color: #1b71bb;
+	box-sizing: border-box;
+	width: 100%;
+	height: 100vh;
+}
+.june2020 button{
+	width: 30%;
+}
+.june2020 h5{
+	font-weight: 700;
+font-size: 1.1em;
+color: white;
+}
+.june2020 span{
+	color: white;
+	text-shadow: 1px 2px 2px #383636;
+   font-size: 1.1em;
+}
+.june2020 p{
+	color: white;
+	font-size: 30px;
+
+}
+.zara a{
+	color: blue;
+
+}
+.personWeek{
+	display: grid;
+	grid-template-columns: 20% 60%;
+	
+}
+.personWeek img{
+	width: 150px;
+}
+.gridit{
+	margin-left: 50px;
+	display: inline-grid;
+	grid-template-columns: 40% 40%;
+	grid-column-gap: 2em;
+	grid-row-gap: 7em;
+}
+.smashingbox{
+	background-color:#800000;
+	height: 380px;
+
+}
+.smashingbox h5 {
+	color: white;
+	margin: 35px;
+	font-size: 26px;
+}
+.smashingbox span {
+	color: white;
+	margin: 35px;
+	font-size: 26px;
+	text-decoration-line: underline;
+}
+.smashingbox p{
+	color: white;
+	margin: 35px;
+}
+.smashingbox button{
+	margin: 35px;
+	width: 25%;
+	height: 15%;
+}
+.gridit2{
+	margin-left: 50px;
+	display: inline-grid;
+     
+	grid-template-columns: 40% 40%;
+	grid-column-gap: 2em;
+	grid-row-gap: 7em;
+}
+ .gridit2 button{
+	color: white;
+}
+.javaScript button{
+	width: auto;
+	height: 20%;
+	background-color: green;
+	box-sizing: border-box;
+
+}
+.css button{
+	width: auto;
+	height: 20%;
+	background-color: orange;
+	box-sizing: border-box;
+
+}
+.web button{
+	width: auto;
+	height: 10%;
+	background-color:#aa1986;;
+	box-sizing: border-box;
+
+}
+.newsletter{
+	color: white;
+	
+}
+.newsletter  label{
+	text-decoration-line: underline;
+	margin-left: 20px;
+	font-size: 25px;
+}
+.newsletter p{
+	margin-left: 20px;
+}
+.newsletter button{
+	width:auto;
+	background-color: blue; 
+
+}
+input{
+	margin-left: 30px;
+	width: 50%;
+}
+.links a{
+
+	text-decoration-line: underline;
+	color: black;
+}
+.links{
+	margin-top: 120px;
+	height:120px;
+}
+.see a{
+
+	text-decoration-line: underline;
+	color: black;
+}
+.see{
+	margin-top: 120px;
+	height:120px;
+}
+.newsletter{
+	background-color: blue;
+	height: 100%;
+}
+
+
+
+
+
 footer{
 	background-color:#800000;
 	height: 500px;

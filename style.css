@@ -19,6 +19,14 @@
 	min-width: 696px;
 
 }
+#topbar button{
+	background-color: #800000;
+	border:1px solid #800000;
+}
+#topbar button{
+	color: white;
+	border-radius: 20px;
+}
 ul li{
 	display: inline;
 }
@@ -38,70 +46,65 @@ h2{
 	font-family: Mija;
 }
 h5{
-	font-family: Elena;
+font-family: Elena;
 text-decoration-line: underline;
 font-size: 20px;
 }
 #search{
 	width: 20%;
+    border-right: none;
+	border-left: none;
+
 }
-
-.item2 { grid-area: menu; }
-.item3 { grid-area: left; }
-.item4 { grid-area: right; }
-.item5 { grid-area: midleft; }
-
 
 
 .grid-container {
-
-	
   display: grid;
-  grid-template-areas:
-   
-    'menu menu menu right right right'
-    ' menu menu menu right right right'
-    'midleft midleft midleft left left left';
-     grid-gap: 0.2px;
-    padding: 1px;
+  grid-template-columns: 50% 50%;
+  grid-gap: 0.2px;
+  padding: 1px;
 
 }
-
+.grid-container img{
+float: left;
+margin-left: 30px;
+margin-top: 100px;
+transform: scale(.84) translateX(15%) rotateZ(calc(-1 * (11 * 1deg)));
+transform-origin: 0 100%;
+transition: transform .2s ease-out;
+}
 
 .grid-container > div {
    padding: 20px 0;
   font-size: 30px;
   color: white;
   text-align: center;
+  height: 100vh;
 }
 .item3{
 	background-color:#B22222;
-	height: 100vh;
-	border-top: 0.1px solid #800000;
+	
+	
 }
 .item4{
 	background-color:#B22222;
-	height: 100vh;
+	
 	
 	border-bottom: 0.1px solid #B22222;
 }
 .item2{
 	background-color:#800000;
-	height: 100vh;
+		
+	}
+
+.item5{
+	background-color:#800000;
 	
 	}
 .grid-container h2{
 	margin-top: 100px;	
 	}
-.item4 h2{
-	margin-top: 100px;	
-	}
-.item5{
-	background-color:#800000;
-	height: 100vh;
 
-	
-}
 a{
 	color: white;
 }
@@ -113,19 +116,16 @@ button{
 .main{
 	margin-left: 50px;
 	display: inline-grid;
-     
-	grid-template-columns: 30% 30% 30%;
+    grid-template-columns: 30% 30% 30%;
 	grid-column-gap: 3em;
 	grid-row-gap: 7em;
 	
 }
 .main2{
 	display: inline-grid;
-	grid-template-columns: 70% 30%;
-	grid-gap: 3em;
+	grid-template-columns: 65% 35%;
+	grid-gap: 1em;
 	color: white;
-
-
 
 }
 .main2 button{
@@ -142,16 +142,18 @@ button{
 }
 .members1{
 	background-color:#B22222;
-	
-	height: 100vh;
-	margin-top: 168px;
+	height: 90vh;
+	margin-top: 70px;
     margin-left: 20px;
     text-align: center;
-
+    border-radius: 10px;
 
 }
+.members1 img{
+	margin: 5px;
+}
 .members1 h5 {
-	margin-top: 230px;
+	margin-top: 0px;
 	font-size: 30px;
 }
 .members1 p{
@@ -164,7 +166,7 @@ button{
 }
 .members a{
 	color: black;
-	font-size: 30px;
+	font-size: 28px;
 }
 .days{
 	width: 55vh;
@@ -207,12 +209,18 @@ button{
 }
 
 .smashingTv{
-	background-color: #B22222;	
+	background-color: #B22222;
+	margin-top: 80px;	
 
 }
 .smashingTv button{
-	width: 30%;
+	width: 25%;
+	border-radius: 10px;
 	
+}
+.smashingTv img{
+	
+	margin-top: 30px; 
 }
 .smashingTv h6{
 text-decoration-line: underline;
@@ -225,7 +233,7 @@ text-decoration-line: underline;
 
 .latest{
 	width: 100vh;
-	height: 20vh;
+	height: 15vh;
 	margin-left: 480px;
 }
 .latest h6{
@@ -235,26 +243,32 @@ text-decoration-line: underline;
 }
 .june2020{
 	background-color: #1b71bb;
-	box-sizing: border-box;
+	border-radius: 10px;
+	margin-left: 35px;
+	margin-right: 55px;
 	width: 100%;
-	height: 100vh;
+	height: 130vh;
 }
 .june2020 button{
 	width: 30%;
 }
 .june2020 h5{
+	padding: 25px;
 	font-weight: 700;
-font-size: 1.1em;
-color: white;
+   font-size: 1.1em;
+   color: white;
+
 }
 .june2020 span{
 	color: white;
 	text-shadow: 1px 2px 2px #383636;
-   font-size: 1.1em;
+   font-size: 3.1em;
+   margin-left: 50px;
 }
 .june2020 p{
 	color: white;
-	font-size: 30px;
+	font-size: 25px;
+	 margin-left: 100px;
 
 }
 .zara a{
@@ -264,20 +278,41 @@ color: white;
 .personWeek{
 	display: grid;
 	grid-template-columns: 20% 60%;
+	margin-left: 40px;
+	margin-top: 30px;
 	
 }
 .personWeek img{
-	width: 150px;
+	width: 180px;
+	transform: scale(.84) translateX(15%) rotateZ(calc(-1 * (11 * 1deg)));
+transform-origin: 0 100%;
+transition: transform .2s ease-out;
 }
 .gridit{
-	margin-left: 50px;
+	margin-left: 100px;
 	display: inline-grid;
-	grid-template-columns: 40% 40%;
+	grid-template-columns: 50% 50%;
 	grid-column-gap: 2em;
 	grid-row-gap: 7em;
 }
-.smashingbox{
+.gridit img{
+	float: left;
+	transform: scale(.84) translateX(15%) rotateZ(calc(-1 * (11 * 1deg)));
+transform-origin: 0 100%;
+transition: transform .2s ease-out;
+}
+
+.gridit h5{
+	margin: 5px;
+}
+
+.box{
+	display: inline-flex;
 	background-color:#800000;
+	width: 100%;
+	margin:30px;
+}
+.smashingbox{
 	height: 380px;
 
 }
@@ -297,40 +332,65 @@ color: white;
 	margin: 35px;
 }
 .smashingbox button{
-	margin: 35px;
-	width: 25%;
+	margin: 10px;
+	width: 35%;
 	height: 15%;
 }
+.designimage{
+	float: right;
+}
+
 .gridit2{
-	margin-left: 50px;
+	
 	display: inline-grid;
-     
-	grid-template-columns: 40% 40%;
-	grid-column-gap: 2em;
+    grid-template-columns: 45% 45%;
+	grid-column-gap: 5em;
 	grid-row-gap: 7em;
+	height: 150vh;
+	padding: 2px;
 }
  .gridit2 button{
 	color: white;
 }
+.gridit2 p{
+	font-size: 19px;
+	
+}
+.gridit2 span{
+	font-size: 12px;
+}
+
 .javaScript button{
 	width: auto;
 	height: 20%;
 	background-color: green;
-	box-sizing: border-box;
+	border-radius:20px;
 
+}
+.javaScript h5{
+	color: green;
+}
+.css  h5{
+	color: orange;
+}
+.web  h5{
+	color: #aa1986;
+}
+.newsletter  h5{
+	color: blue;
 }
 .css button{
 	width: auto;
 	height: 20%;
 	background-color: orange;
-	box-sizing: border-box;
+	border-radius:20px;
 
 }
 .web button{
 	width: auto;
 	height: 10%;
 	background-color:#aa1986;;
-	box-sizing: border-box;
+	border-radius:20px;
 
 }
 .newsletter{
@@ -383,7 +443,7 @@ input{
 
 footer{
 	background-color:#800000;
-	height: 500px;
+	height: 650px;
 	margin: 15px;
 	
 }
@@ -406,6 +466,24 @@ footer a {
 footer p{
 	color: white;
 }
+ .footerimg{
+  
+ 	display: inline-flex;
+ 	margin: 65px;
+  }
+  .pup{
+  	position: absolute;
+  	right: 85px;
+
+  }
+  .imgcage{
+  	position: absolute;
+  	left: 85px;
+  }
+  .linkwrite{
+  	margin-left: 240px;
+  }
+
 .smashingTv{
 	background-color: #B22222;
 	width: 100%;
